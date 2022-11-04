@@ -81,6 +81,7 @@ h5 {
 }
 
 /*  RESPONSIVE <3 */
+
 @media (min-width: 430px) {
 
      /* ~ PARALLAX ~ */
@@ -249,6 +250,7 @@ h5 {
      }
 
       /* ~ BUTTON FORM ~ */
+
     input[type=submit] {
         border: 1px solid #29575E;
         padding: 15px;
@@ -266,9 +268,14 @@ h5 {
         display: block !important;
     }
 
+    /* FOR FIXED NAV */ 
+
     main { 
         padding-top: 70px ;
     }
+
+    /* STICKY NAV */
+
     .navbar {
         min-height: 70px;
         width: 100%;
@@ -281,6 +288,33 @@ h5 {
         position: sticky;
         z-index: 1;
       
+    }
+
+    /* RESPONSIVE DETAILS */
+
+    .citations { 
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px; 
+        margin-top: 40px;
+        border: 1px solid rgba(0, 0, 0, .02);
+
+}
+    details[open] > p {
+        animation: sweep .6s ease-in-out;
+        margin-left: 150px;
+        margin-right: 200px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    details p { 
+        margin-left: 150px;
+        margin-right: 200px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+       
     }
 
 }
@@ -793,7 +827,7 @@ input[type=submit]:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1140px; 
+    max-width: 100%; 
     margin-top: 40px;
     border: 1px solid rgba(0, 0, 0, .02);
 
@@ -837,8 +871,7 @@ details[open] i {
 
 
 details p { 
-    margin-left: 150px;
-    margin-right: 200px;
+    padding: 0 30px 0 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
    
@@ -855,10 +888,9 @@ details[open] {
   
 details[open] > p {
     animation: sweep .6s ease-in-out;
-    margin-left: 150px;
-    margin-right: 200px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    width: 100%;
 
  }
 
