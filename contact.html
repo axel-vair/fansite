@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/9d25ea5c587d0f9d470aa9a3634735ea?family=ETmodules" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="fansite.css">
+    <script src="https://kit.fontawesome.com/75738720bb.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <!-- Start Nav -->
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">RIMBAUD.</a>
+            
+            <ul class="nav-menu">
+                <li class="nav-link">
+                    <a href="index.html" class="nav-item">L'auteur et son oeuvre</a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="actualite.html" class="nav-item">L'actualité sur Rimbaud</a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="ressources.html" class="nav-item">Ressources</a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="contact.html" class="nav-item">Contact</a>
+                </li>    
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+        </nav>
+    <!-- End Nav -->
+    </header>
+
+
+    <main class="main_contact">
+
+        <section class="contact_page">
+            <div class="title_contact">
+                <h3>Contact</h3>
+            </div>   
+        </section>
+        <section class="container_form">
+            <div class="form">
+                <form>
+                    <div>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Votre e-mail" pattern=".+@globex\.com" required>
+                        <label for="objet">Objet</label>
+                        <input type="text" id="objet" name="objet" placeholder="L'objet du message.">
+                    </div>
+                    <div>
+                        <label for="subject">Votre message</label>
+                        <textarea id="subject" name="subject" placeholder="Ecrivez votre message" style="height:200px"></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container_footer">
+            <div class="child_foot1">
+                <a class="foot_logo"href="index.html">Rimbaud.</a>
+                <p>Le déréglement de tous les sens.</p>
+            </div> 
+            <div class="news">
+                <p>Inscrivez-vous à notre newsletter pour vous tenir informé sur Rimbaud</p>
+                <form class="form">
+                    <input type="text" class="text-field" maxlength="256" placeholder="Votre e-mail">
+                    <input type="submit" value="Inscription"> 
+                </form>
+            </div>
+            <div class="media">
+                <p>Suivez-nous</p>
+                <div class="logo_media">
+                    <a href=""><img src="./images/instagram.png" alt="logo Instagram"></a>
+                    <a href=""><img src="./images/facebook.png" alt="logo Facebook"></a>
+                    <a href=""><img src="./images/twitter.png" alt="logo Twitter"></a>     
+                </div>
+            </div> 
+            <div class="contact">
+                <p>Informations</p>
+                <p class="button_contact"><a href="contact.html">Contact</a></p>
+                
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+
+        <div class="subfoot">
+            <div class="rights">
+            <p>© 2022 RIMBAUD. Droits réservés.</p>
+            </div>
+            <div class="cookies">
+                <p><a href="#">Politique de confidentialité</a></p>
+                <p><a href="#">Cookies</a></p>
+             </div>
+        </div>
+    </footer>
+
+    <!-- Start script JS -->
+    <script src="app.js"></script>
+    <!-- End script JS -->
+</body>
+</html>
